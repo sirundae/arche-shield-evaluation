@@ -1,0 +1,39 @@
+{
+  "name": "Commercial production team use inquiry",
+  "description": "상업/production/팀 이용권은 미확정; 사용범위 문의",
+  "title": "[USE] ",
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "評価/テストのみ / 평가·테스트 전용. 개인정보/고객파일/토큰 금지. 지원 의향은 결제/계약 아님. [평가조건](https://github.com/sirundae/arche-shield-evaluation/blob/release/rc4-eval1/EVALUATION_TERMS.md)."
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "scope",
+      "attributes": {
+        "label": "Requested use",
+        "options": [
+          "COMMERCIAL",
+          "PRODUCTION",
+          "TEAM"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "use",
+      "attributes": {
+        "label": "Intended use summary",
+        "description": "비밀/고객/개인정보 없는 요구 요약. 승인 전 해당 사용권 없음."
+      },
+      "validations": {
+        "required": true
+      }
+    }
+  ]
+}
