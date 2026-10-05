@@ -32,3 +32,11 @@ GitHub Issues에 버전·오류 코드·합성 재현을 남깁니다. 자동 �
 ## 처음 평가하는 분께
 
 [무료 평가 첫 실행 안내](https://sirundae.github.io/arche-shield-evaluation/)에서 다운로드→파일 확인→Python 준비→합성 데모→오류 해결을 따라갈 수 있습니다. 웹페이지는 파일 검사/결제/분석 이벤트를 수집하지 않습니다.
+
+## English evaluation and structured feedback
+
+[English first-run guide](https://sirundae.github.io/arche-shield-evaluation/en/) · [한국어 안내](https://sirundae.github.io/arche-shield-evaluation/)
+
+Evaluate resolved filesystem paths and damage previews before a Windows AI-agent file operation. This is advisory preflight, not OS-wide enforcement or a security certification. Use synthetic/test workspaces only; production/commercial rights are not included.
+
+[Structured evaluation form](https://github.com/sirundae/arche-shield-evaluation/issues/new?template=00-evaluation.yml) · [Use-scope inquiry](https://github.com/sirundae/arche-shield-evaluation/issues/new?template=00-use-inquiry.yml) (GitHub sign-in required). Choose actual installation and first-inspection outcomes separately. Optional support intent is not an order, payment, software license or commercial-use right. Existing Markdown templates remain for old release links.

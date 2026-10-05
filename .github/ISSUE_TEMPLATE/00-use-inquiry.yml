@@ -1,0 +1,39 @@
+name: 02 · 사용범위 문의 / Use inquiry
+description: 평가 또는 상업/production/팀 문의를 구분 / No automatic rights grant.
+title: '[USE] Scope inquiry / 사용범위 문의'
+body:
+- type: markdown
+  attributes:
+    value: 공개 제출 / Public submission. 개인정보·고객파일·개인경로·credentials를 넣지 마세요. Please share sanitized synthetic
+      results only. Free evaluation/testing only; no production or commercial rights. Submission is not
+      an order or payment. GitHub sign-in required.
+- type: dropdown
+  id: requested-use
+  attributes:
+    label: Requested use
+    description: 상업·production·팀 요청은 별도 Owner 결정 / Commercial/production/team inquiries open an Owner
+      decision gate; no rights are granted.
+    multiple: false
+    options:
+    - EVALUATION
+    - COMMERCIAL
+    - PRODUCTION
+    - TEAM
+  validations:
+    required: true
+- type: textarea
+  id: question
+  attributes:
+    label: Scope question
+    description: 합성/테스트 사용 상황만 간단히 설명 / Briefly describe the test scenario without customer or personal
+      data.
+  validations:
+    required: true
+- type: checkboxes
+  id: evaluation-terms
+  attributes:
+    label: Evaluation boundary
+    options:
+    - label: 평가/테스트만 하며 공개 제출에 민감정보를 포함하지 않겠습니다. I understand evaluation-only scope and will not post
+        sensitive data.
+      required: true

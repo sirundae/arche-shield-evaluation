@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sirundae.github.io/arche-shield-evaluation/sitemap.xml

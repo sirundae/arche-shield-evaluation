@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="460" viewBox="0 0 520 460" role="img" aria-labelledby="title desc">
+<title id="title">Requested path versus resolved target</title><desc id="desc">Synthetic illustration: a link resolving outside a workspace receives DENY.</desc>
+<rect width="520" height="460" rx="12" fill="oklch(.96 .009 290)"/>
+<g font-family="Malgun Gothic, sans-serif" fill="oklch(.24 .025 290)">
+<text x="30" y="46" font-size="20" font-weight="700">A name can hide a different target</text>
+<rect x="30" y="78" width="460" height="88" rx="6" fill="white"/><text x="50" y="108" font-size="15">Requested path · synthetic example</text><text x="50" y="141" font-size="20" font-weight="700">D:\test\shortcut</text>
+<path d="M260 178v44m-10-10 10 10 10-10" fill="none" stroke="oklch(.43 .16 290)" stroke-width="3"/>
+<text x="30" y="201" font-size="14">Resolve target</text>
+<rect x="30" y="234" width="460" height="88" rx="6" fill="white"/><text x="50" y="264" font-size="15">Resolved target · outside workspace</text><text x="50" y="297" font-size="20" font-weight="700">D:\outside\sample</text>
+<rect x="30" y="350" width="460" height="73" rx="6" fill="oklch(.43 .16 290)"/><text x="50" y="378" font-size="20" font-weight="700" fill="white">DENY · read the reason first</text><text x="50" y="404" font-size="14" fill="white">No file deletion · no OS-wide enforcement</text>
+</g></svg>

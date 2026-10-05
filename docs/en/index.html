@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Evaluate ARCHE SHIELD on Windows: inspect resolved filesystem targets and damage previews before an AI agent file operation. Offline advisory preflight, not OS enforcement.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; connect-src 'none'; font-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>ARCHE SHIELD · Windows evaluation and first inspection</title>
+<link rel="canonical" href="https://sirundae.github.io/arche-shield-evaluation/en/"><link rel="alternate" hreflang="ko" href="https://sirundae.github.io/arche-shield-evaluation/"><link rel="alternate" hreflang="en" href="https://sirundae.github.io/arche-shield-evaluation/en/"><link rel="alternate" hreflang="x-default" href="https://sirundae.github.io/arche-shield-evaluation/en/">
+<meta property="og:title" content="ARCHE SHIELD · Inspect the real target before a file operation">
+<meta property="og:description" content="Free Windows evaluation guide: resolved paths, damage preview and policy decisions. No OS-wide enforcement or security certification.">
+<meta property="og:url" content="https://sirundae.github.io/arche-shield-evaluation/en/"><meta property="og:type" content="website">
+<link rel="stylesheet" href="../site.css"><script src="guide-en.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap masthead"><a class="wordmark" href="./">ARCHE <b>SHIELD</b></a><nav aria-label="Page navigation"><a href="../" lang="ko" hreflang="ko">한국어</a><a href="#start">First run</a><a href="#help">Troubleshooting</a><a href="#limits">Scope</a></nav></header>
+<main id="main">
+<section class="wrap opening">
+<div class="intro"><p class="edition">Windows RC4 · Free technical evaluation</p><h1>Check the target.<br><em>Before the command.</em></h1>
+<p class="lead">See the requested path, its resolved target, affected files and bytes, and the reason for a policy decision.</p>
+<p>For Windows users evaluating file workflows with Codex or Claude Code. Submitted destructive commands are never executed. A junction can point beyond a workspace even when its name looks safe.</p>
+<a class="primary" href="https://github.com/sirundae/arche-shield-evaluation/releases/download/v0.1.0-rc4-eval2/arche-shield-0.1.0-rc4-eval2-windows.zip">Download Windows evaluation ZIP <span aria-hidden="true">↗</span></a>
+<p class="fine">Anonymous download · Python 3.12 or newer required<br>Evaluation/testing only · No production or commercial-use rights</p></div>
+<figure class="path-figure"><img src="target-path-en.svg" alt="Synthetic example: a shortcut in a test folder resolves outside the workspace, so preflight reports DENY without deleting files." width="520" height="460"><figcaption>Synthetic illustration. This documentation page does not inspect files or execute commands.</figcaption></figure>
+</section>
+<section class="wrap download-proof" aria-labelledby="artifact-title"><h2 id="artifact-title">Verify the download first</h2>
+<p><b>arche-shield-0.1.0-rc4-eval2-windows.zip</b> · 58,943 bytes · Release 0.1.0-rc4-eval2</p>
+<p>The embedded product version is 0.1.0. GitHub's automatic “Source code” archive is not the runnable package.</p>
+<p class="hash-label">Evaluation ZIP SHA256</p><code class="hash">49d1083903660b509d6e6f73630ccccf3b0ee7f94f1778e5f25b00ffd57bbc53</code>
+<p><a href="https://github.com/sirundae/arche-shield-evaluation/releases/download/v0.1.0-rc4-eval2/SHA256SUMS.txt">Checksums</a> · <a href="https://github.com/sirundae/arche-shield-evaluation/releases/tag/v0.1.0-rc4-eval2">Release notes and all assets</a></p></section>
+<section id="start" class="wrap start" aria-labelledby="start-title"><div><h2 id="start-title">Start with synthetic files</h2><p class="lead">No customer or work files are needed.<br>Use a new folder and read the inspection result.</p></div>
+<ol class="steps">
+<li><h3>Check the ZIP, then extract it</h3><p>Windows Start → PowerShell. Replace the example path with the downloaded file's actual path. Compare all 64 SHA256 characters above. Stop if they differ.</p>
+<pre><code>Get-FileHash -Algorithm SHA256 -LiteralPath 'C:\Path\To\arche-shield-0.1.0-rc4-eval2-windows.zip'</code></pre>
+<p>File Explorer → right-click ZIP → <b>Extract All</b> → choose a new folder. Do not run inside the ZIP or overwrite an older extraction.</p></li>
+<li><h3>Check Python and the package</h3><p>Start → Command Prompt → <code>python --version</code> or <code>py -3 --version</code>. Require 3.12 or newer. If absent, review the <a href="https://www.python.org/downloads/windows/">official Python instructions</a>. No automatic installation or administrator elevation is requested.</p>
+<p>Copy the extracted folder address and replace the example below:</p><pre><code>cd /d "C:\Path\To\ExtractedFolder"
+VERIFY.cmd
+SHIELD.cmd --help
+SHIELD.cmd --version</code></pre><p>Expected: <code>verification: PASS</code>, usage text and product version <code>0.1.0</code>.</p></li>
+<li><h3>Run and read the synthetic demo</h3><pre><code>TRY_DEMO.cmd</code></pre>
+<p>Expected: <code>demo: PASS</code>, <code>synthetic_only: true</code>, <code>submitted_commands_executed: false</code>. Only newly created synthetic demo files are inspected; demo files and audit records remain.</p>
+<p>Default <code>C:\Users</code> protection may correctly return <b>DENY / exit code 2</b>. Read the reason; do not weaken system protection. The demo's test policy does not grant rights for other workspaces.</p></li>
+</ol></section>
+<section class="guide-surface"><div class="wrap"><h2>Your next step</h2><p>Selections stay in this page only. They are not stored or sent and do not prove installation success.</p>
+<form id="readiness" aria-label="First-run help">
+<fieldset><legend>Python 3.12 or newer?</legend><label><input type="radio" name="python" value="unknown" checked> Not checked</label><label><input type="radio" name="python" value="yes"> Confirmed</label><label><input type="radio" name="python" value="no"> Missing or older</label></fieldset>
+<fieldset><legend>ZIP SHA256 matches?</legend><label><input type="radio" name="checksum" value="unknown" checked> Not compared</label><label><input type="radio" name="checksum" value="yes"> Matches</label><label><input type="radio" name="checksum" value="no"> Different</label></fieldset>
+<fieldset><legend>Synthetic demo result?</legend><label><input type="radio" name="demo" value="unknown" checked> Not run</label><label><input type="radio" name="demo" value="yes"> demo: PASS</label><label><input type="radio" name="demo" value="no"> Error</label></fieldset>
+<button type="reset">Reset selections</button>
+</form>
+<div class="next-step" role="status" aria-live="polite" aria-atomic="true"><h3 id="next-title">Check Python first</h3><p id="next-copy">Use python --version or py -3 --version. The package does not install Python.</p><a id="next-link" href="#start">First-run instructions</a></div>
+<noscript><p>JavaScript is disabled. Follow the three steps above and troubleshooting below; JavaScript is not required for evaluation.</p></noscript>
+</div></section>
+<section id="help" class="wrap help"><h2>If the result differs</h2>
+<details><summary>PYTHON_3_12_REQUIRED</summary><p>Check the version. If installation is needed, review the official Python instructions yourself. This page and launcher do not automatically change PATH, system settings or privileges.</p></details>
+<details><summary>PACKAGE_HASH_MISMATCH or checksum mismatch</summary><p>Stop. Preserve the current folder, download again from the public release and compare in a new folder. Do not turn off security or lower policy protections.</p></details>
+<details><summary>DENY, exit code 2 or Git UNKNOWN</summary><p>DENY is a policy result. Read the reason: protected roots, links outside a workspace, file/byte limits or Git metadata. UNKNOWN is not permission. Do not execute the proposed operation.</p></details>
+<details><summary>Exit code 3 or another error</summary><p>Preserve the version and error code. It may be a configuration, audit or integrity error. Reproduce with synthetic files and report the sanitized result. Do not attach customer files, personal paths or credentials.</p></details>
+</section>
+<section id="limits" class="wrap boundaries"><h2>Evaluation scope and known limits</h2><div class="boundary-columns"><div><h3>Evaluation/testing only</h3><p>No production, commercial operation, resale, redistribution, white-label or team commercial-use rights. Seven days is a market measurement window, not a forced software expiry.</p><p>Use synthetic/test workspaces. Real-user restore, hooks and live providers are OFF.</p></div><div><h3>Advisory preflight boundaries</h3><p>No OS-wide enforcement. ALLOW is advisory, not execution authority. Independent RC4 security audit: NOT_RUN. AUDIT016: INCOMPLETE. Heuristic, TOCTOU and privilege-dependent detection limitations remain.</p><p>Unsigned evaluation artifact. Local mock is NOT_EXTERNAL_TRUST. Coherent whole-DB plus mock rollback is NOT_PROTECTED; no full restore guarantee. Cached pages and downloaded copies may remain after unpublishing.</p></div></div>
+<p><a href="https://github.com/sirundae/arche-shield-evaluation/blob/release/rc4-eval1/EVALUATION_TERMS.md">Evaluation terms</a> · <a href="https://github.com/sirundae/arche-shield-evaluation/blob/release/rc4-eval1/KNOWN_LIMITATIONS.md">Known limitations</a> · <a href="https://github.com/sirundae/arche-shield-evaluation/blob/release/rc4-eval1/ROLLBACK.md">Version preservation and rollback</a></p></section>
+<section class="wrap feedback"><h2>After your first inspection</h2><p>Report installation, first inspection and one concrete useful situation separately. A download is not a successful installation, buying intent or revenue.</p>
+<a class="primary" href="https://github.com/sirundae/arche-shield-evaluation/issues/new?template=00-evaluation.yml">Open the structured evaluation form <span aria-hidden="true">↗</span></a>
+<p class="fine">GitHub sign-in required · Public issue: no personal data, customer files or credentials<br>Optional support interest is not an order, contract, payment or software license. Payments are OFF.</p>
+<p><a href="https://github.com/sirundae/arche-shield-evaluation/issues/new?template=00-use-inquiry.yml">Commercial / production / team-use inquiry</a> requires a separate Owner decision; inquiry does not grant usage rights.</p></section>
+</main>
+<footer class="wrap"><p>ARCHE SHIELD · Free technical evaluation documentation · DEPLOY004</p><p><a href="../" lang="ko">한국어 안내</a> · <a href="https://github.com/sirundae/arche-shield-evaluation">Distribution repository</a> · No automatic updates, ongoing SLA, payment or analytics collection.</p></footer>
+</body></html>

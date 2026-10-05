@@ -1,0 +1,88 @@
+name: 01 · 평가 결과 / Evaluation form
+description: 설치·첫 검사·가치·지원의향을 선택형으로 제출 / Structured evaluation results.
+title: '[EVAL] RC4 evaluation / 평가 결과'
+body:
+- type: markdown
+  attributes:
+    value: 공개 제출 / Public submission. 개인정보·고객파일·개인경로·credentials를 넣지 마세요. Please share sanitized synthetic
+      results only. Free evaluation/testing only; no production or commercial rights. Submission is not
+      an order or payment. GitHub sign-in required.
+- type: dropdown
+  id: release
+  attributes:
+    label: Release version
+    description: 평가한 배포 버전 / Release tested. Other versions are not RC4 success evidence.
+    multiple: false
+    options:
+    - 0.1.0-rc4-eval2
+    - OTHER
+  validations:
+    required: true
+- type: dropdown
+  id: install
+  attributes:
+    label: Install success
+    description: YES=설치 성공, NO=실패, NOT_RUN=미실행 / Report actual installation, not a download.
+    multiple: false
+    options:
+    - 'YES'
+    - 'NO'
+    - NOT_RUN
+  validations:
+    required: true
+- type: dropdown
+  id: inspection
+  attributes:
+    label: First successful inspection
+    description: YES=합성 작업공간 실제 첫 검사 성공 / Actual first inspection on synthetic files.
+    multiple: false
+    options:
+    - 'YES'
+    - 'NO'
+    - NOT_RUN
+  validations:
+    required: true
+- type: textarea
+  id: value
+  attributes:
+    label: Concrete value statement
+    description: 구체적으로 도움된 상황 또는 오류를 적어 주세요. State a concrete useful situation or error. NONE if no value
+      yet. No personal paths, screenshots containing customer data or credentials.
+    placeholder: 'Example: The junction preview revealed an outside-workspace target.'
+  validations:
+    required: false
+- type: dropdown
+  id: support
+  attributes:
+    label: KRW49000 one-time support intent
+    description: 'YES=49,000원 1회 도입지원에 명시적 구매의향 / Explicit intent for optional KRW49,000 onboarding support:
+      max60min install/environment/first synthetic inspection +1 simple follow-up during evaluation. NOT
+      a software license, custom development, production integration, ongoing SLA, commercial/team rights
+      or managed service. No payment/order/contract. NO=no; CONDITIONAL=undecided.'
+    multiple: false
+    options:
+    - 'YES'
+    - 'NO'
+    - CONDITIONAL
+  validations:
+    required: true
+- type: dropdown
+  id: commercial
+  attributes:
+    label: Commercial / production / team use requested
+    description: YES=상업/production/팀 권리 문의 / Requests require a separate Owner decision and do not grant
+      rights.
+    multiple: false
+    options:
+    - 'NO'
+    - 'YES'
+  validations:
+    required: true
+- type: checkboxes
+  id: evaluation-terms
+  attributes:
+    label: Evaluation boundary
+    options:
+    - label: 평가/테스트만 하며 공개 제출에 민감정보를 포함하지 않겠습니다. I understand evaluation-only scope and will not post
+        sensitive data.
+      required: true
