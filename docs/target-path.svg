@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="460" viewBox="0 0 520 460" role="img" aria-labelledby="title desc">
+<title id="title">요청 경로와 실제 대상의 차이</title><desc id="desc">합성 설명 예시. 테스트 폴더의 링크가 작업공간 밖으로 향하면 DENY 확인.</desc>
+<rect width="520" height="460" rx="12" fill="oklch(.96 .009 290)"/>
+<g font-family="Malgun Gothic, sans-serif" fill="oklch(.24 .025 290)">
+<text x="30" y="46" font-size="20" font-weight="700">경로 이름만으로 판단하지 않습니다</text>
+<rect x="30" y="78" width="460" height="88" rx="6" fill="white"/><text x="50" y="108" font-size="15">요청 경로 · 합성 예시</text><text x="50" y="141" font-size="20" font-weight="700">D:\test\shortcut</text>
+<path d="M260 178v44m-10-10 10 10 10-10" fill="none" stroke="oklch(.43 .16 290)" stroke-width="3"/>
+<text x="30" y="201" font-size="14">연결 대상 확인</text>
+<rect x="30" y="234" width="460" height="88" rx="6" fill="white"/><text x="50" y="264" font-size="15">실제 대상 · 작업공간 밖</text><text x="50" y="297" font-size="20" font-weight="700">D:\outside\sample</text>
+<rect x="30" y="350" width="460" height="73" rx="6" fill="oklch(.43 .16 290)"/><text x="50" y="378" font-size="20" font-weight="700" fill="white">DENY · 이유를 먼저 읽기</text><text x="50" y="404" font-size="14" fill="white">파일 삭제 실행 없음 · OS 전체 강제 차단 아님</text>
+</g></svg>
