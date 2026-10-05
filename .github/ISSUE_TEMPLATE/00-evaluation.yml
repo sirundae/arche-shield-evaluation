@@ -14,6 +14,7 @@ body:
     description: 평가한 배포 버전 / Release tested. Other versions are not RC4 success evidence.
     multiple: false
     options:
+    - 0.1.0-rc4-eval3-portable
     - 0.1.0-rc4-eval2
     - OTHER
   validations:

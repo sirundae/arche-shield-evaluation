@@ -1,3 +1,23 @@
+# ARCHE SHIELD — portable Windows evaluation
+
+Inspect requested/resolved targets, damage previews and policy decisions before a file operation. Advisory evaluation only; submitted destructive commands are never executed.
+
+**Windows 11 x64: Python included, no installation or administrator elevation.**
+
+- [Download portable ZIP](https://github.com/sirundae/arche-shield-evaluation/releases/download/v0.1.0-rc4-eval3-portable/arche-shield-0.1.0-rc4-eval3-portable-windows-x64.zip) — 11,481,989 bytes
+- SHA256: `ed970e413db1453755553d0f4e335cc75f44f824c9b994cb7fa56e48e107e1af`
+- [한국어 첫 실행 안내](https://github.com/sirundae/arche-shield-evaluation/blob/release/rc4-eval1/PORTABLE_START_KO.md) · [English first run](https://github.com/sirundae/arche-shield-evaluation/blob/release/rc4-eval1/PORTABLE_START_EN.md)
+- [Release/checksums/rollback](https://github.com/sirundae/arche-shield-evaluation/releases/tag/v0.1.0-rc4-eval3-portable)
+- [한국어 online guide](https://sirundae.github.io/arche-shield-evaluation/) · [English](https://sirundae.github.io/arche-shield-evaluation/en/)
+
+Extract to a fresh folder → VERIFY.cmd → SHIELD.cmd --help → TRY_DEMO.cmd. Verification failure or security restriction: stop, preserve the error, do not bypass protection. Embedded official CPython 3.13.16 is unchanged and retains upstream LICENSE.txt; runtime signatures are not SHIELD certification. No telemetry, updater, system Python discovery or payment activation.
+
+Free evaluation/testing only. No production/commercial/resale/redistribution/white-label/team commercial rights for SHIELD. Third-party Python retains its own upstream terms. Known limits: unsigned SHIELD wrapper/package; RC4 independent security audit NOT_RUN; AUDIT016 INCOMPLETE; heuristic/TOCTOU/nativeprivilege/mock/rollback boundaries. ALLOW is advisory, not permission to execute.
+
+## Preserved previous package and evaluation/support information
+
+The previous eval2 package uses system Python 3.12+ and remains available. The following original instructions apply to **eval2**, not the new portable package:
+
 # ARCHE SHIELD · Windows AI 작업 전 피해 미리보기
 
 AI가 파일을 건드리기 전에 **요청 경로와 실제 대상·예상 파일 수/크기·정책 차단 사유**를 확인하고 검사 기록을 남기는 로컬 사전 검사기입니다.

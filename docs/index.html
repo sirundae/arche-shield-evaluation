@@ -19,16 +19,17 @@
   <div class="intro"><p class="edition">Windows RC4 · 무료 평가 안내</p><h1>파일 작업 전,<br>실제 대상을<br><em>먼저 확인하세요.</em></h1>
    <p class="lead">요청한 경로와 연결된 실제 경로, 예상 파일 수와 크기, 정책 차단 이유를 확인하는 로컬 사전 검사기입니다.</p>
    <p>Windows에서 Codex·Claude Code로 작업하는 평가자를 위한 도구입니다. 제출한 삭제 명령은 실행하지 않습니다.</p>
-   <a class="primary" href="https://github.com/sirundae/arche-shield-evaluation/releases/download/v0.1.0-rc4-eval2/arche-shield-0.1.0-rc4-eval2-windows.zip">Windows 평가 ZIP 받기 <span aria-hidden="true">↗</span></a>
-   <p class="fine">로그인 없이 다운로드 · Python 3.12 이상 필요<br>무료 평가/테스트 전용 · production·상업 운영권 없음</p>
+   <a class="primary" href="https://github.com/sirundae/arche-shield-evaluation/releases/download/v0.1.0-rc4-eval3-portable/arche-shield-0.1.0-rc4-eval3-portable-windows-x64.zip">Windows 평가 ZIP 받기 <span aria-hidden="true">↗</span></a>
+   <p class="fine">로그인 없이 다운로드 · Windows 11 x64 · Python 포함<br>무료 평가/테스트 전용 · production·상업 운영권 없음</p>
   </div>
   <figure class="path-figure"><img src="target-path.svg" alt="설명용 예시: 테스트 폴더의 링크가 작업공간 밖으로 연결되면 요청 경로와 실제 경로가 달라지며 사전 검사에서 DENY를 확인합니다." width="520" height="460"><figcaption>설명용 합성 예시입니다. 이 웹페이지는 파일을 검사하거나 명령을 실행하지 않습니다.</figcaption></figure>
  </section>
- <section class="wrap download-proof" aria-labelledby="artifact-title"><h2 id="artifact-title">내려받는 파일을 확인하세요</h2><p><b>arche-shield-0.1.0-rc4-eval2-windows.zip</b> · 58,943 bytes · 배포 버전 0.1.0-rc4-eval2</p><p>제품 내부 버전은 0.1.0입니다. GitHub의 자동 “Source code” ZIP은 실행 패키지가 아닙니다.</p><p class="hash-label">평가 ZIP SHA256</p><code class="hash">49d1083903660b509d6e6f73630ccccf3b0ee7f94f1778e5f25b00ffd57bbc53</code><p><a href="https://github.com/sirundae/arche-shield-evaluation/releases/download/v0.1.0-rc4-eval2/SHA256SUMS.txt">공개 checksum 파일</a> · <a href="https://github.com/sirundae/arche-shield-evaluation/releases/tag/v0.1.0-rc4-eval2">Release notes와 전체 배포 파일</a></p></section>
+ <section class="wrap download-proof" aria-labelledby="artifact-title"><h2 id="artifact-title">내려받는 파일을 확인하세요</h2><p><b>arche-shield-0.1.0-rc4-eval3-portable-windows-x64.zip</b> · 11,481,989 bytes · 배포 버전 0.1.0-rc4-eval3-portable</p><p>제품 내부 버전은 0.1.0입니다. GitHub의 자동 “Source code” ZIP은 실행 패키지가 아닙니다.</p><p class="hash-label">평가 ZIP SHA256</p><code class="hash">ed970e413db1453755553d0f4e335cc75f44f824c9b994cb7fa56e48e107e1af</code><p><a href="https://github.com/sirundae/arche-shield-evaluation/releases/download/v0.1.0-rc4-eval3-portable/SHA256SUMS.txt">공개 checksum 파일</a> · <a href="https://github.com/sirundae/arche-shield-evaluation/releases/tag/v0.1.0-rc4-eval3-portable">Release notes와 전체 배포 파일</a></p></section>
+ <p class="wrap">기존 Python 설치 사용자는 <a href="https://github.com/sirundae/arche-shield-evaluation/releases/tag/v0.1.0-rc4-eval2">이전 eval2 패키지와 안내</a>를 선택할 수 있습니다. 휴대용 평가판은 시스템 Python/PATH를 변경하지 않습니다.</p>
  <section id="start" class="wrap start" aria-labelledby="start-title"><div><h2 id="start-title">첫 검사는 합성 파일로</h2><p class="lead">실제 고객·업무 파일을 준비할 필요가 없습니다.<br>새 폴더에서 확인하고, 표시된 결과를 읽어 주세요.</p></div>
   <ol class="steps">
-   <li><h3>ZIP 확인 후 새 폴더에 풀기</h3><p>Windows 시작 메뉴 → PowerShell. 다운로드한 실제 경로로 아래 파일명을 바꿔 SHA256을 비교하세요. 다르면 실행을 멈춥니다.</p><pre><code>Get-FileHash -Algorithm SHA256 -LiteralPath 'C:\다운로드폴더\arche-shield-0.1.0-rc4-eval2-windows.zip'</code></pre><p>탐색기 → ZIP 오른쪽 클릭 → <b>모두 압축 풀기</b>. ZIP 안에서 직접 실행하지 마세요.</p></li>
-   <li><h3>Python과 패키지 확인</h3><p>시작 메뉴 → 명령 프롬프트 → <code>python --version</code> 또는 <code>py -3 --version</code>. 3.12 이상이어야 합니다. <a href="https://www.python.org/downloads/windows/">공식 Python 안내</a>를 참고하세요. 자동 설치나 관리자 권한 요청은 없습니다.</p><p>압축 푼 폴더 주소를 복사한 뒤 다음 순서로 입력합니다.</p><pre><code>cd /d "압축 푼 폴더 주소"
+   <li><h3>ZIP 확인 후 새 폴더에 풀기</h3><p>Windows 시작 메뉴 → PowerShell. 다운로드한 실제 경로로 아래 파일명을 바꿔 SHA256을 비교하세요. 다르면 실행을 멈춥니다.</p><pre><code>Get-FileHash -Algorithm SHA256 -LiteralPath 'C:\다운로드폴더\arche-shield-0.1.0-rc4-eval3-portable-windows-x64.zip'</code></pre><p>탐색기 → ZIP 오른쪽 클릭 → <b>모두 압축 풀기</b>. ZIP 안에서 직접 실행하지 마세요.</p></li>
+   <li><h3>Windows와 패키지 확인</h3><p>설정 → 시스템 → 정보에서 Windows 11과 x64 기반 프로세서를 확인하세요. ARM64·32비트는 이번 패키지 대상이 아닙니다. Python 3.13.16이 runtime 폴더에 포함되어 별도 설치가 필요 없습니다. VERIFY.cmd는 먼저 기본 Windows PowerShell로 파일 해시를 확인합니다. 관리자 권한이나 실행 정책 변경을 요구하지 않습니다.</p><p>압축 푼 폴더 주소를 복사한 뒤 다음 순서로 입력합니다.</p><pre><code>cd /d "압축 푼 폴더 주소"
 VERIFY.cmd
 SHIELD.cmd --help
 SHIELD.cmd --version</code></pre><p>정상 결과: <code>verification: PASS</code>, 사용법 표시, 제품 버전 <code>0.1.0</code>.</p></li>
@@ -37,16 +38,16 @@ SHIELD.cmd --version</code></pre><p>정상 결과: <code>verification: PASS</cod
  </section>
  <section class="guide-surface"><div class="wrap"><h2>지금 상태에 맞는 다음 한 걸음</h2><p>아래 선택은 이 페이지 안에서만 사용합니다. 저장·전송하지 않으며 실제 설치 성공을 측정하지 않습니다.</p>
   <form id="readiness" aria-label="첫 실행 도움말 선택">
-   <fieldset><legend>Python 3.12 이상인가요?</legend><label><input type="radio" name="python" value="unknown" checked> 아직 확인하지 않음</label><label><input type="radio" name="python" value="yes"> 확인함</label><label><input type="radio" name="python" value="no"> 없거나 버전이 낮음</label></fieldset>
+   <fieldset><legend>Windows 11 x64인가요?</legend><label><input type="radio" name="python" value="unknown" checked> 아직 확인하지 않음</label><label><input type="radio" name="python" value="yes"> 확인함</label><label><input type="radio" name="python" value="no"> 다른 환경임</label></fieldset>
    <fieldset><legend>ZIP SHA256이 일치하나요?</legend><label><input type="radio" name="checksum" value="unknown" checked> 아직 비교하지 않음</label><label><input type="radio" name="checksum" value="yes"> 일치함</label><label><input type="radio" name="checksum" value="no"> 다름</label></fieldset>
    <fieldset><legend>합성 데모 결과는 무엇인가요?</legend><label><input type="radio" name="demo" value="unknown" checked> 아직 실행하지 않음</label><label><input type="radio" name="demo" value="yes"> demo: PASS</label><label><input type="radio" name="demo" value="no"> 오류가 발생함</label></fieldset>
    <button type="reset">선택 초기화</button>
   </form>
-  <div class="next-step" role="status" aria-live="polite" aria-atomic="true"><h3 id="next-title">Python 버전부터 확인하세요</h3><p id="next-copy">명령 프롬프트에서 python --version 또는 py -3 --version을 확인하세요. 패키지는 Python을 자동 설치하지 않습니다.</p><a id="next-link" href="#start">첫 실행 순서 보기</a></div>
+  <div class="next-step" role="status" aria-live="polite" aria-atomic="true"><h3 id="next-title">Windows 11 x64를 확인하세요</h3><p id="next-copy">설정 → 시스템 → 정보에서 Windows 11 x64를 확인하세요. Python은 패키지에 포함되어 있으며 별도 설치하지 않습니다.</p><a id="next-link" href="#start">첫 실행 순서 보기</a></div>
   <noscript><p>JavaScript가 꺼져 있습니다. 위의 세 단계와 아래 문제 해결 안내만으로 평가할 수 있습니다.</p></noscript>
  </div></section>
  <section id="help" class="wrap help"><h2>결과가 예상과 다르다면</h2>
-  <details><summary>PYTHON_3_12_REQUIRED</summary><p>Python 버전을 확인하세요. 설치가 필요하면 공식 다운로드와 설치 안내를 직접 검토합니다. 이 페이지나 실행기가 시스템 설정/PATH/권한을 자동 변경하지 않습니다.</p></details>
+  <details><summary>PORTABLE_RUNTIME_VERIFICATION_FAILED 또는 보안 정책 차단</summary><p>파일 누락·변경 또는 기본 Windows PowerShell 실행 제한일 수 있습니다. 오류를 보존하고 새 폴더에서 checksum을 비교하세요. 보안 기능·실행 정책을 해제하거나 관리자 권한으로 우회하지 마세요. 차단이 계속되면 중지하고 정제된 오류만 접수하세요.</p></details>
   <details><summary>PACKAGE_HASH_MISMATCH 또는 checksum 불일치</summary><p>실행을 멈추세요. 기존 폴더를 덮어쓰지 말고 공개 release에서 ZIP을 다시 받아 새 폴더에서 checksum을 비교합니다. 보안 설정을 끄거나 보호를 낮추지 마세요.</p></details>
   <details><summary>DENY, 종료코드 2 또는 Git UNKNOWN</summary><p>DENY는 정책 판정입니다. 보호 폴더, workspace 밖 연결, 파일 수/크기 제한, Git 메타데이터 등을 reason에서 확인하세요. Git UNKNOWN은 허용으로 해석하지 않습니다. 실제 작업을 실행하지 마세요.</p></details>
   <details><summary>종료코드 3 또는 다른 오류</summary><p>설정·검사기록·무결성 오류일 수 있습니다. 오류 코드와 버전을 보존하고 새 합성 파일로 재현해 평가 접수에 남깁니다. 고객 파일·개인 경로·토큰을 첨부하지 마세요.</p></details>
@@ -54,5 +55,5 @@ SHIELD.cmd --version</code></pre><p>정상 결과: <code>verification: PASS</cod
  <section id="limits" class="wrap boundaries"><h2>평가 범위와 알려진 한계</h2><div class="boundary-columns"><div><h3>무료 평가/테스트 전용</h3><p>production 사용·상업 운영·재판매·재배포·white-label·팀용 상업 라이선스를 포함하지 않습니다. 7일은 시장검증 측정기간이며 소프트웨어 강제 만료가 아닙니다.</p><p>실제 고객 파일 대신 합성/테스트 작업공간만 사용하세요. 실제 사용자 복구·hooks·live provider는 활성화하지 않았습니다.</p></div><div><h3>사전 검사 도구의 경계</h3><p>OS 전체 강제 차단이 아니며 ALLOW도 명령 실행 권한이 아닙니다. 독립 RC4 보안감사 NOT_RUN, AUDIT016 INCOMPLETE. TOCTOU·휴리스틱·권한 의존 탐지 한계가 있습니다.</p><p>서명 없는 평가판이며 로컬 mock은 외부 신뢰가 아닙니다. 전체 DB+mock 동시 rollback 보호 및 완전 복구를 보장하지 않습니다. 배포 철회 후에도 캐시와 이미 받은 파일은 남을 수 있습니다.</p></div></div><p><a href="https://github.com/sirundae/arche-shield-evaluation/blob/release/rc4-eval1/EVALUATION_TERMS.md">전체 평가 이용조건</a> · <a href="https://github.com/sirundae/arche-shield-evaluation/blob/release/rc4-eval1/KNOWN_LIMITATIONS.md">알려진 한계</a> · <a href="https://github.com/sirundae/arche-shield-evaluation/blob/release/rc4-eval1/ROLLBACK.md">버전 보존과 rollback</a></p></section>
  <section class="wrap feedback"><h2>첫 검사 뒤, 결과를 알려 주세요</h2><p>설치 성공과 첫 검사 성공, 도움이 된 구체적 상황을 구분해 주세요. 다운로드를 사용자 성공이나 매출로 세지 않습니다.</p><a class="primary" href="https://github.com/sirundae/arche-shield-evaluation/issues/new?template=00-evaluation.yml">선택형 평가 결과 남기기 <span aria-hidden="true">↗</span></a><p class="fine">GitHub 로그인 필요 · 공개 issue에 개인정보/고객 파일/토큰 금지<br>지원 의향 입력은 구매·계약·결제가 아닙니다. 실제 결제는 비활성입니다.</p><p><a href="https://github.com/sirundae/arche-shield-evaluation/issues/new?template=00-use-inquiry.yml">상업·production·팀 사용범위 문의</a>는 별도 Owner 검토 대상입니다.</p></section>
 </main>
-<footer class="wrap"><p>ARCHE SHIELD · 무료 기술평가 문서 · 페이지 버전 DEPLOY004</p><p><a href="https://github.com/sirundae/arche-shield-evaluation">배포 저장소</a> · 자동 업데이트/지속적 SLA 없음 · 개인정보·결제·분석 이벤트 수집 없음</p></footer>
+<footer class="wrap"><p>ARCHE SHIELD · 무료 기술평가 문서 · 페이지 버전 DEPLOY005</p><p><a href="https://github.com/sirundae/arche-shield-evaluation">배포 저장소</a> · 자동 업데이트/지속적 SLA 없음 · 개인정보·결제·분석 이벤트 수집 없음</p></footer>
 </body></html>

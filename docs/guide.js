@@ -2,7 +2,7 @@
 'use strict';
 function nextStep(python, checksum, demo) {
   if (checksum === 'no') return {title:'실행을 멈추고 파일을 확인하세요',copy:'SHA256이 다르면 실행하지 마세요. 기존 폴더를 보존하고 공식 release의 ZIP을 새 폴더에 받아 비교하세요.',href:'#help'};
-  if (python !== 'yes') return {title:'Python 버전부터 확인하세요',copy:'명령 프롬프트에서 python --version 또는 py -3 --version을 확인하세요. 패키지는 Python을 자동 설치하지 않습니다.',href:'#start'};
+  if (python !== 'yes') return {title:'Windows 11 x64를 확인하세요',copy:'설정 → 시스템 → 정보에서 Windows 11 x64를 확인하세요. Python은 포함되어 별도 설치가 필요 없습니다.',href:'#start'};
   if (checksum !== 'yes') return {title:'ZIP SHA256을 먼저 비교하세요',copy:'PowerShell의 Get-FileHash 결과와 공개 checksum이 같은지 비교합니다. 아직 비교하지 않았다면 실행하지 마세요.',href:'#artifact-title'};
   if (demo === 'no') return {title:'오류 코드로 다음 단계를 확인하세요',copy:'오류와 버전을 보존하고 문제 해결 안내를 읽으세요. 보안 설정을 끄거나 권한을 높이지 마세요.',href:'#help'};
   if (demo !== 'yes') return {title:'새 합성 데모를 실행하세요',copy:'압축 푼 폴더에서 VERIFY.cmd, SHIELD.cmd --help 확인 후 TRY_DEMO.cmd를 실행하고 demo: PASS 및 submitted_commands_executed: false를 읽으세요.',href:'#start'};
