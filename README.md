@@ -4,11 +4,11 @@ AI가 파일을 건드리기 전에 **요청 경로와 실제 대상·예상 파
 
 **RC4 무료 평가/테스트 전용 · Python3.12+ · 제출된 삭제 명령 실행 없음.** 완전한 보안 보장/OS 전체 강제 차단/독립 감사 인증 제품이 아닙니다.
 
-- [Windows 평가 ZIP 내려받기](https://github.com/sirundae/arche-shield-evaluation/releases/download/v0.1.0-rc4-eval1/arche-shield-0.1.0-rc4-eval1-windows.zip)
-- [Release / SHA256 / notes](https://github.com/sirundae/arche-shield-evaluation/releases/tag/v0.1.0-rc4-eval1)
+- [Windows 평가 ZIP 내려받기](https://github.com/sirundae/arche-shield-evaluation/releases/download/v0.1.0-rc4-eval2/arche-shield-0.1.0-rc4-eval2-windows.zip)
+- [Release / SHA256 / notes](https://github.com/sirundae/arche-shield-evaluation/releases/tag/v0.1.0-rc4-eval2)
 - [Windows 처음 실행하기](START_HERE_KO.md) /[평가 이용조건](EVALUATION_TERMS.md) /[알려진 한계](KNOWN_LIMITATIONS.md) /[롤백](ROLLBACK.md)
-- [평가 후기·49,000원 도입지원 의향 접수](https://github.com/sirundae/arche-shield-evaluation/issues/new?template=01-evaluation.yml)
-- [commercial/production/team 사용범위 문의](https://github.com/sirundae/arche-shield-evaluation/issues/new?template=02-use-inquiry.yml)
+- [평가 후기·49,000원 도입지원 의향 접수](https://github.com/sirundae/arche-shield-evaluation/issues/new?template=01-evaluation.md)
+- [commercial/production/team 사용범위 문의](https://github.com/sirundae/arche-shield-evaluation/issues/new?template=02-use-inquiry.md)
 
 ZIP은 로그인 없이 내려받습니다. 의견 접수에는 GitHub 로그인이 필요합니다. 개인정보/고객 파일/원본 경로/토큰을 공개 issue에 넣지 마세요.
 

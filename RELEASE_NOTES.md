@@ -1,6 +1,6 @@
-# ARCHE SHIELD 0.1.0-rc4-eval1 · 공개 무료 평가판
+# ARCHE SHIELD 0.1.0-rc4-eval2 · 공개 무료 평가판
 
-Python3.12 이상으로 동작하는 설치 없는 Windows 평가 배포물입니다. 제품 버전은0.1.0, 배포판은0.1.0-rc4-eval1입니다.
+Python3.12 이상으로 동작하는 설치 없는 Windows 평가 배포물입니다. 제품 버전은0.1.0, 배포판은0.1.0-rc4-eval2입니다.
 
 Product source: `2a1da8f117920c0af528d91848aa3bf80b9e3dfc`. RC4 zipapp SHA256: `0560cb651156a0315e1af43761840979fb040e6fbdf971756296d9f2d8d4d8e5`. 기존 RC4 실행 바이트를 그대로 사용하며 제품 코드/기능/소스를 변경하거나 RC5를 만들지 않았습니다.
 

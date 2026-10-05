@@ -1,11 +1,11 @@
 {
   "product_source_commit": "2a1da8f117920c0af528d91848aa3bf80b9e3dfc",
   "product_rc4_sha256": "0560cb651156a0315e1af43761840979fb040e6fbdf971756296d9f2d8d4d8e5",
-  "distribution_version": "0.1.0-rc4-eval1",
+  "distribution_version": "0.1.0-rc4-eval2",
   "zip": {
-    "name": "arche-shield-0.1.0-rc4-eval1-windows.zip",
-    "bytes": 58716,
-    "sha256": "8a85c57f62739b079929bee2abca5794040414a9922574047426f66c60621d8a"
+    "name": "arche-shield-0.1.0-rc4-eval2-windows.zip",
+    "bytes": 58943,
+    "sha256": "49d1083903660b509d6e6f73630ccccf3b0ee7f94f1778e5f25b00ffd57bbc53"
   },
   "source_history_published": false,
   "runtime_zipapp_inspectable": true,

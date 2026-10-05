@@ -5,6 +5,7 @@
 - 독립 RC4 security audit: NOT_RUN. AUDIT016 safety-filter interruption: INCOMPLETE. 재시도/우회/다른 이름의 재포장 감사로 인증하지 않습니다.
 - 과거 builder regression587 PASS/3 native privilege SKIP. 자체 시험이며 독립 인증이 아닙니다. symlink 권한 사례는 환경 의존적입니다.
 - TOCTOU, 휴리스틱 파싱/탐지, native Git 저장소 root의 긴 경로 UNKNOWN_DENY 등 한계가 있습니다. 알려지지 않은 결과는 거부될 수 있습니다.
+- release 철회는 draft 전환으로 공개 API 목록에서 내리는 방식입니다. 기존 HTML·asset URL은 cache/CDN 때문에 계속 응답할 수 있어 즉시 회수·차단을 보장하지 않습니다.
 - unsigned ZIP/zipapp; checksum은 바이트 일관성이지 게시자 서명이 아닙니다.
 - mock anchor NOT_EXTERNAL_TRUST. coherent DB+mock 동시 rollback NOT_PROTECTED. 완전한 rollback 보장이 아닙니다.
 - 실제 사용자 복구/hooks/live provider/production integration은 활성화하지 않았습니다. snapshot 실제 복구는 owned synthetic demo 전용입니다.
