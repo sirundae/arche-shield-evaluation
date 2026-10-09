@@ -1,3 +1,15 @@
+## Try the synthetic Decision Card first · 합성 판정 이유부터 확인
+
+Existing eval4 is a **synthetic demo only**, not live agent protection or SHIELD ON. Windows 11 x64 + existing trusted Git; Python included.
+
+- [한국어 3단계 첫 가치 안내](CARD_FIRST_VALUE_KO.md) · [English three-step first value](CARD_FIRST_VALUE_EN.md)
+- [Download/checksum/terms/limits](https://github.com/sirundae/arche-shield-evaluation/releases/tag/v0.1.0-rc4-eval4-card)
+- `CARD_DEMO.cmd`: synthetic Read ALLOW / Git metadata Write DENY. No destructive operation executed; close to stop, no global hook installed.
+
+Free evaluation/testing only. Actual agent connection, customer success and the 3/5-minute targets remain unverified. Earlier portable/manual preflight instructions are preserved below.
+
+---
+
 # ARCHE SHIELD — portable Windows evaluation
 
 Inspect requested/resolved targets, damage previews and policy decisions before a file operation. Advisory evaluation only; submitted destructive commands are never executed.
